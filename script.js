@@ -5,12 +5,6 @@
 // Crianças valem por 0,5
 
 
-// function quatTemp() {
-//     var tempo = document.getElementById("inp3")
-//     var temp = tempo.value
-//     console.log(temp)
-// }
-
 function button1() {
     var temp = document.getElementById("inp3")
     var tempo = temp.value
@@ -27,11 +21,15 @@ function button1() {
     if(tempo < 6) {
 
     var ResCarne = Adul * 400
+
     var ResCarneCriancas = (Adul * 400) * 0.5
     var ResCarneCrianca = ResCarneCriancas * Criancas
     var ResCarneTot = ResCarne + ResCarneCrianca
+
     var ResCerveja = Adul * 1200
+
     var ResRefriAgua = Adul * 1000
+
     var ResRefriAguaCriancas = (Adul * 1000) * 0.5
     var ResRefriAguaCrianca = ResRefriAguaCriancas * Criancas
     var ResRefriAguaTot = ResRefriAgua + ResRefriAguaCrianca
@@ -42,17 +40,21 @@ function button1() {
     console.log(ResRefriAgua) //Só para verificar
     console.log(ResRefriAguaCrianca) //Só para verificar
 
-    QuatFinal1.innerHTML = ResCarneTot + ' Gramas de carne ' + ' e ' + ResCerveja + ' ml de cerveja'
-    QuatFinal2.innerHTML = ResRefriAguaTot + ' ml de água e refrigerante'
+    QuatFinal1.innerHTML = `<p>${ResCarneTot / 1000} Kg de carne e ${ResCerveja / 1000} L de cerveja</p>`
+    QuatFinal2.innerHTML += `<p>${ResRefriAguaTot / 1000} L de água e refrigerante</p>`
     }
     else {
 
         var ResCarne = Adul * 650
+
         var ResCarneCriancas = (Adul * 650) * 0.5
         var ResCarneCrianca = ResCarneCriancas * Criancas
         var ResCarneTot = ResCarne + ResCarneCrianca
+
         var ResCerveja = Adul * 2000
+
         var ResRefriAgua = Adul * 1500
+
         var ResRefriAguaCriancas = (Adul * 1500) * 0.5
         var ResRefriAguaCrianca = ResCarneCriancas * Criancas
         var ResRefriAguaTot = ResRefriAgua + ResRefriAguaCrianca
@@ -63,7 +65,11 @@ function button1() {
         console.log(ResRefriAgua) //Só para verificar
         console.log(ResRefriAguaCrianca) //Só para verificar
 
-        QuatFinal1.innerHTML = ResCarneTot + ' Gramas de carne ' + ' e ' + ResCerveja + ' ml de cerveja'
-        QuatFinal2.innerHTML = ResRefriAguaTot + ' ml de água e refrigerante'
+        QuatFinal1.innerHTML = `<p>${ResCarneTot / 1000} Kg de carne e ${ResCerveja / 1000} L de cerveja</p>`
+        QuatFinal2.innerHTML += `<p>${ResRefriAguaTot / 1000} L de água e refrigerante</p>`
     }
+}
+
+function recarregar() {
+    window.location.reload(true);
 }

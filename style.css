@@ -57,6 +57,17 @@ body {
     font-weight: bold;
     margin-left: 1vw;
 }
+#button2 {
+    background-image: linear-gradient(to right, #9957a7, #9a5ba7, #9c5fa7, #9d63a7, #9e67a7);
+    border: none;
+    width: 9vw;
+    border-radius: 1vw;
+    height: 2.2vw;    
+    color: white;
+    font-weight: bold;
+    margin-left: 1vw;
+    margin-left: 10vw;
+}
 .button-main{
     padding-top: 0.7vw;
 }
