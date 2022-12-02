@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
+
+
 body {
         padding: 0;
-        background-image: url(fewfw.jpg);
+        background-image: url(istockphoto-526712258-1024x1024.svg);
+        background-position: center;
         background-size: cover;
-        width: 100%;
-        height: 100%;
-        margin: 0;
         font-family: 'Roboto', sans-serif;
-        
+        font-size: 2vw;
+    
 }
+
 
 .a1 {
     margin-top: 8vw;
@@ -19,6 +21,7 @@ body {
     margin-left: 30vw;
     border-radius: 1vw;
     box-shadow: 0.4vw 0.4vw 0.4vw rgba(76, 76, 76, 0.378);
+    text-align: center;
 }
 
 .h1-main {
@@ -56,6 +59,7 @@ body {
     color: white;
     font-weight: bold;
     margin-left: 1vw;
+    font-size: 1.2vw;
 }
 #button2 {
     background-image: linear-gradient(to right, #9957a7, #9a5ba7, #9c5fa7, #9d63a7, #9e67a7);
@@ -65,8 +69,9 @@ body {
     height: 2.2vw;    
     color: white;
     font-weight: bold;
-    margin-left: 1vw;
+    
     margin-left: 10vw;
+    font-size: 1.2vw;
 }
 .button-main{
     padding-top: 0.7vw;
@@ -78,3 +83,24 @@ body {
     color: white;
     font-weight: 400;
 }
+@media screen and (max-width: 700px){
+    .a1 {
+        margin-top: 25vw;
+        width: 45vw;
+        height: 38vw;
+    }
+    .h1-main{
+        font-size: 3vw;
+    }
+    .inp {
+        padding: 1vw;
+    }
+    .b1 {
+        height: 3vw;
+        font-size: 1.7vw;
+    }
+    #button2 {
+        height: 3vw;
+        font-size: 1.7vw;
+    }
+ }
